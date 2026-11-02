@@ -1,2 +1,13 @@
-# my-first-webpage
-my first webpage from task1
+# 我的第一个网页
+
+这是我在 Task 1 中制作的【个人日常主页 · 夏日番剧风】，名字叫「神の日常」。
+
+## 有什么内容
+（开场页 / 4 篇日常 + 分类筛选 + 阅读全文展开 / 推し笔记 / 关于我 / 响应式等细节）
+
+## 怎么打开
+下载【陈宇钧 _task1.html】，用浏览器打开即可。
+
+## 使用的工具
+- DeepSeek Harness 里的 AI 编程 Agent
+- 原生 HTML5 + CSS3 + JavaScript，无框架、无外部依赖
