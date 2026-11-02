@@ -1,0 +1,3038 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)file:///C:/Users/ASUS/Documents/deepseek-harness/default-workspace/index.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="神の日常：计算机新生陈宇钧的三角洲、番剧、音乐、Steam 与夏日日常。">
+  <meta name="theme-color" content="#e8f7ff">
+  <title>神の日常｜神的日常</title>
+  <style>
+    :root {
+      --paper: #e8f7ff;
+      --paper-light: #ffffff;
+      --paper-deep: #d8effd;
+      --ink: #16334f;
+      --ink-soft: #3f5d78;
+      --muted: #526e86;
+      --green: #1274b8;
+      --green-deep: #0b5589;
+      --green-pale: #def4ff;
+      --green-line: #9ed8f2;
+      --line: #b9dff1;
+      --line-soft: #d6ebf6;
+      --ochre: #ffd45e;
+      --yellow: #ffd45e;
+      --pink: #ff9eb7;
+      --pink-dark: #a63e64;
+      --sky: #54c7f5;
+      --serif: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Microsoft YaHei", "PingFang SC", sans-serif;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+      --jp: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Meiryo", "Microsoft YaHei", sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background-color: var(--paper);
+      background-image:
+        radial-gradient(circle at 91% 7%, rgba(84, 199, 245, 0.34), transparent 26rem),
+        radial-gradient(circle at 2% 46%, rgba(255, 212, 94, 0.18), transparent 22rem),
+        radial-gradient(circle at 82% 84%, rgba(255, 158, 183, 0.14), transparent 24rem),
+        radial-gradient(rgba(18, 116, 184, 0.08) 0.65px, transparent 0.8px);
+      background-size: auto, auto, auto, 22px 22px;
+      background-attachment: fixed;
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.75;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    ::selection {
+      color: var(--paper-light);
+      background: var(--green);
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--green);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+
+    .shell {
+      width: min(1120px, calc(100% - clamp(2.5rem, 8vw, 7rem)));
+      margin-inline: auto;
+    }
+
+    main section[id] {
+      scroll-margin-top: 96px;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 10px;
+      left: 16px;
+      z-index: 200;
+      padding: 10px 16px;
+      color: var(--paper-light);
+      background: var(--green-deep);
+      text-decoration: none;
+      transform: translateY(-160%);
+      transition: transform 0.2s ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    /* ---------- 顶部导航 ---------- */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(244, 239, 228, 0.9);
+      border-bottom: 1px solid rgba(201, 193, 178, 0.58);
+      -webkit-backdrop-filter: saturate(1.15) blur(14px);
+      backdrop-filter: saturate(1.15) blur(14px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      min-height: 78px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      position: relative;
+      display: grid;
+      flex: 0 0 auto;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      border: 1px solid rgba(47, 89, 71, 0.58);
+      border-radius: 50%;
+      color: var(--green);
+      background: rgba(251, 248, 241, 0.6);
+      font-family: var(--serif);
+      font-size: 17px;
+      line-height: 1;
+    }
+
+    .brand-mark::after {
+      position: absolute;
+      bottom: 4px;
+      left: 50%;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: var(--green);
+      opacity: 0.55;
+      content: "";
+      transform: translateX(-50%);
+    }
+
+    .brand-copy {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: 0.12em;
+    }
+
+    .brand-latin {
+      margin-top: 3px;
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 8px;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 0.2em;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(1rem, 3.2vw, 2.5rem);
+    }
+
+    .nav-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0;
+      color: var(--ink-soft);
+      font-size: 13.5px;
+      letter-spacing: 0.15em;
+      text-decoration: none;
+      transition: color 0.25s ease;
+    }
+
+    .nav-link::after {
+      position: absolute;
+      right: 0;
+      bottom: 4px;
+      left: 0;
+      height: 1px;
+      background: var(--green);
+      content: "";
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link[aria-current] {
+      color: var(--green);
+    }
+
+    .nav-link:hover::after,
+    .nav-link[aria-current]::after {
+      transform: scaleX(1);
+    }
+
+    /* ---------- 开场 ---------- */
+
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.04fr) minmax(330px, 0.96fr);
+      align-items: center;
+      gap: clamp(3rem, 6vw, 5.5rem);
+      padding: clamp(4.5rem, 7.5vw, 6.8rem) 0 clamp(5rem, 8vw, 7.5rem);
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 27px;
+      color: var(--green);
+      font-size: 10.5px;
+      font-weight: 600;
+      line-height: 1.4;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow-rule {
+      display: inline-block;
+      width: 34px;
+      height: 1px;
+      background: var(--green-line);
+    }
+
+    .hero-title {
+      max-width: 11em;
+      margin: 0;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: clamp(2.1rem, 5.4vw, 4.35rem);
+      font-weight: 500;
+      line-height: 1.24;
+      letter-spacing: -0.055em;
+    }
+
+    .title-line {
+      display: block;
+    }
+
+    .title-accent {
+      color: var(--green);
+      background-image: linear-gradient(to top, rgba(47, 89, 71, 0.13) 0, rgba(47, 89, 71, 0.13) 0.16em, transparent 0.16em);
+      background-repeat: no-repeat;
+      background-position: 0 92%;
+    }
+
+    .hero-lead {
+      max-width: 40em;
+      margin: 29px 0 0;
+      color: var(--ink-soft);
+      font-size: 16px;
+      line-height: 2;
+      letter-spacing: 0.015em;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 18px 26px;
+      margin-top: 38px;
+    }
+
+    .primary-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      min-height: 50px;
+      padding: 12px 22px;
+      border: 1px solid var(--green);
+      border-radius: 2px;
+      color: var(--paper-light);
+      background: var(--green);
+      box-shadow: 0 10px 22px rgba(35, 67, 52, 0.16);
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .primary-button svg {
+      width: 16px;
+      height: 16px;
+      flex: 0 0 auto;
+      transition: transform 0.3s ease;
+    }
+
+    .primary-button:hover {
+      background: var(--green-deep);
+      box-shadow: 0 14px 28px rgba(35, 67, 52, 0.21);
+      transform: translateY(-2px);
+    }
+
+    .primary-button:hover svg {
+      transform: translateY(3px);
+    }
+
+    .hero-note {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.06em;
+    }
+
+    .note-dot {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--green);
+      opacity: 0.65;
+    }
+
+    /* 开场右侧的纸卡插画 */
+
+    .hero-art {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 520px;
+      isolation: isolate;
+    }
+
+    .art-disc {
+      position: absolute;
+      top: 24px;
+      right: 3px;
+      z-index: 0;
+      width: 330px;
+      height: 330px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 36% 30%, #dfd0b5 0%, #d2bd98 58%, #c4ad84 100%);
+      opacity: 0.82;
+      filter: saturate(0.78);
+    }
+
+    .art-orbit {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      width: 450px;
+      height: 450px;
+      border: 1px solid rgba(47, 89, 71, 0.19);
+      border-radius: 50%;
+      transform: translate(-50%, -50%) rotate(-12deg);
+    }
+
+    .art-orbit::before {
+      position: absolute;
+      top: 43px;
+      right: 72px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      opacity: 0.55;
+      content: "";
+    }
+
+    .postcard {
+      position: relative;
+      z-index: 2;
+      width: min(100%, 376px);
+      padding: 16px 16px 20px;
+      border: 1px solid #d9d1c1;
+      border-radius: 2px;
+      background: linear-gradient(145deg, #fdfaf4 0%, #f8f3e8 100%);
+      box-shadow: 0 32px 64px rgba(42, 49, 40, 0.14), 0 3px 8px rgba(42, 49, 40, 0.05);
+      transform: rotate(2.2deg);
+      transition: transform 0.55s cubic-bezier(0.22, 0.7, 0.2, 1);
+    }
+
+    .hero-art:hover .postcard {
+      transform: rotate(0.8deg) translateY(-3px);
+    }
+
+    .postcard-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 0 2px 12px;
+      color: var(--muted);
+      font-size: 8.5px;
+      font-weight: 600;
+      line-height: 1.4;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .postcard-scene {
+      position: relative;
+      height: 274px;
+      overflow: hidden;
+      border-radius: 150px 150px 2px 2px;
+      background: #dce4d6;
+      box-shadow: inset 0 0 0 1px rgba(47, 89, 71, 0.08);
+    }
+
+    .scene-svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .postcard-scene::before {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background:
+        linear-gradient(180deg, rgba(255, 250, 239, 0.08), transparent 44%, rgba(25, 43, 32, 0.09)),
+        radial-gradient(circle at 50% 105%, transparent 45%, rgba(30, 50, 37, 0.12));
+      content: "";
+      pointer-events: none;
+    }
+
+    .postcard-scene::after {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      background-image: radial-gradient(rgba(31, 48, 36, 0.16) 0.55px, transparent 0.75px);
+      background-size: 4px 4px;
+      content: "";
+      opacity: 0.26;
+      pointer-events: none;
+    }
+
+    .postcard-caption {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 16px 2px 0;
+    }
+
+    .caption-en {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--muted);
+      font-size: 8px;
+      font-weight: 600;
+      line-height: 1.4;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .caption-cn {
+      margin: 0;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 20px;
+      line-height: 1.45;
+      letter-spacing: 0.035em;
+    }
+
+    .postmark {
+      position: relative;
+      display: grid;
+      flex: 0 0 auto;
+      width: 52px;
+      height: 52px;
+      place-items: center;
+      border: 1px solid rgba(47, 89, 71, 0.62);
+      border-radius: 50%;
+      color: var(--green);
+      font-family: var(--serif);
+      font-size: 9.5px;
+      line-height: 1.5;
+      text-align: center;
+      transform: rotate(-9deg);
+    }
+
+    .postmark::before {
+      position: absolute;
+      inset: 4px;
+      border: 1px solid rgba(47, 89, 71, 0.25);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .art-note {
+      position: absolute;
+      bottom: 8px;
+      left: 10px;
+      z-index: 3;
+      margin: 0;
+      padding: 8px 14px;
+      border: 1px solid #dcd4c5;
+      background: #fbf7ed;
+      box-shadow: 0 8px 18px rgba(42, 49, 40, 0.07);
+      color: var(--green);
+      font-family: var(--serif);
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      transform: rotate(-3deg);
+    }
+
+    /* ---------- 文章区 ---------- */
+
+    .writing {
+      position: relative;
+      padding: clamp(3.7rem, 6vw, 5.2rem) 0 clamp(5.5rem, 8vw, 7rem);
+      border-top: 1px solid var(--line);
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .section-kicker {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 15px;
+      color: var(--green);
+      font-size: 10.5px;
+      font-weight: 600;
+      line-height: 1.4;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    .section-kicker .kicker-slash {
+      color: var(--green-line);
+      font-weight: 400;
+    }
+
+    .section-title {
+      margin: 0;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: clamp(2rem, 3.5vw, 2.9rem);
+      font-weight: 500;
+      line-height: 1.24;
+      letter-spacing: -0.04em;
+    }
+
+    .section-intro {
+      max-width: 310px;
+      margin: 0 0 5px;
+      color: var(--muted);
+      font-family: var(--serif);
+      font-size: 15px;
+      line-height: 1.9;
+      letter-spacing: 0.02em;
+      text-align: right;
+    }
+
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px 24px;
+      margin: 34px 0 24px;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+      padding: 4px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(251, 248, 241, 0.56);
+    }
+
+    .filter-button {
+      min-height: 38px;
+      padding: 7px 18px;
+      border: 0;
+      border-radius: 999px;
+      color: var(--ink-soft);
+      background: transparent;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .filter-button:hover {
+      color: var(--green);
+      background: var(--green-pale);
+    }
+
+    .filter-button[aria-pressed="true"] {
+      color: var(--paper-light);
+      background: var(--green);
+      box-shadow: 0 4px 10px rgba(47, 89, 71, 0.16);
+    }
+
+    .filter-result {
+      margin: 0;
+      color: var(--muted);
+      font-size: 11.5px;
+      line-height: 1.5;
+      letter-spacing: 0.09em;
+      white-space: nowrap;
+    }
+
+    .posts-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: start;
+      gap: clamp(1rem, 2vw, 1.35rem);
+    }
+
+    .post-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 390px;
+      overflow: hidden;
+      padding: clamp(1.5rem, 2.7vw, 2rem);
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: rgba(251, 248, 241, 0.74);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.55) inset, 0 10px 24px rgba(48, 52, 47, 0.035);
+      transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, background-color 0.35s ease;
+    }
+
+    .post-card::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--green);
+      content: "";
+      transition: width 0.45s ease;
+    }
+
+    .post-card:hover,
+    .post-card:focus-within {
+      border-color: #bdc9bb;
+      background: rgba(253, 250, 244, 0.9);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 20px 42px rgba(46, 57, 45, 0.08);
+      transform: translateY(-4px);
+    }
+
+    .post-card:hover::before,
+    .post-card:focus-within::before,
+    .post-card.is-open::before {
+      width: 100%;
+    }
+
+    .post-card.is-open {
+      border-color: #b8c6b6;
+      background: rgba(253, 250, 244, 0.93);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 20px 42px rgba(46, 57, 45, 0.075);
+    }
+
+    .post-card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .post-category {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 1.5;
+      letter-spacing: 0.18em;
+    }
+
+    .post-category::before {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--green);
+      content: "";
+    }
+
+    .post-number {
+      color: var(--muted);
+      font-family: var(--serif);
+      font-size: 13px;
+      line-height: 1.4;
+      letter-spacing: 0.08em;
+      opacity: 0.72;
+    }
+
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin: 21px 0 0;
+      color: var(--muted);
+      font-size: 11.5px;
+      line-height: 1.5;
+      letter-spacing: 0.07em;
+    }
+
+    .meta-separator {
+      width: 13px;
+      height: 1px;
+      background: var(--line);
+    }
+
+    .post-title {
+      margin: 11px 0 13px;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: clamp(1.45rem, 2.2vw, 1.7rem);
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: -0.025em;
+    }
+
+    .post-excerpt {
+      margin: 0 0 28px;
+      color: var(--ink-soft);
+      font-size: 14.5px;
+      line-height: 1.9;
+      letter-spacing: 0.012em;
+    }
+
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: auto;
+      padding-top: 15px;
+      border-top: 1px solid var(--line-soft);
+    }
+
+    .reading-time {
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.5;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+    }
+
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 0;
+      border: 0;
+      color: var(--green);
+      background: transparent;
+      font-size: 12.5px;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: color 0.25s ease;
+    }
+
+    .read-more::after {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 2px;
+      left: 0;
+      height: 1px;
+      background: currentColor;
+      content: "";
+      opacity: 0.28;
+      transform: scaleX(0.72);
+      transform-origin: right;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .read-more {
+      position: relative;
+    }
+
+    .read-more:hover {
+      color: var(--green-deep);
+    }
+
+    .read-more:hover::after {
+      opacity: 0.7;
+      transform: scaleX(1);
+    }
+
+    .read-more svg {
+      width: 13px;
+      height: 13px;
+      flex: 0 0 auto;
+      transition: transform 0.3s ease;
+    }
+
+    .read-more[aria-expanded="true"] svg {
+      transform: rotate(180deg);
+    }
+
+    .post-body {
+      margin-top: 24px;
+      animation: body-reveal 0.42s cubic-bezier(0.22, 0.7, 0.2, 1) both;
+    }
+
+    .post-body p {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 14.5px;
+      line-height: 2;
+      letter-spacing: 0.012em;
+    }
+
+    .post-body p + p {
+      margin-top: 15px;
+    }
+
+    .post-body p:first-child::first-letter {
+      float: left;
+      padding: 7px 8px 0 0;
+      color: var(--green);
+      font-family: var(--serif);
+      font-size: 2.55em;
+      font-weight: 500;
+      line-height: 0.8;
+    }
+
+    .post-body .post-signoff {
+      margin-top: 22px;
+      padding-top: 15px;
+      border-top: 1px solid var(--line-soft);
+      color: var(--green);
+      font-family: var(--serif);
+      font-size: 12.5px;
+      line-height: 1.8;
+      letter-spacing: 0.04em;
+      text-align: right;
+    }
+
+    .post-body .post-signoff::first-letter {
+      float: none;
+      padding: 0;
+      color: inherit;
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+    }
+
+    @keyframes body-reveal {
+      from {
+        transform: translateY(8px);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    /* ---------- 关于我 ---------- */
+
+    .about {
+      padding-bottom: clamp(4.5rem, 7vw, 6.8rem);
+    }
+
+    .about-panel {
+      position: relative;
+      display: grid;
+      grid-template-columns: 205px minmax(0, 1fr);
+      gap: clamp(2rem, 5vw, 4.5rem);
+      overflow: hidden;
+      padding: clamp(2rem, 4.5vw, 3.6rem) clamp(1.5rem, 5vw, 4rem);
+      border: 1px solid #d2dacd;
+      border-radius: 3px;
+      background: linear-gradient(135deg, rgba(231, 236, 226, 0.9) 0%, rgba(248, 244, 235, 0.94) 100%);
+    }
+
+    .about-panel::before {
+      position: absolute;
+      top: -205px;
+      right: -100px;
+      width: 390px;
+      height: 390px;
+      border: 1px solid rgba(47, 89, 71, 0.13);
+      border-radius: 50%;
+      box-shadow: 0 0 0 28px rgba(47, 89, 71, 0.025), 0 0 0 58px rgba(47, 89, 71, 0.018);
+      content: "";
+      pointer-events: none;
+    }
+
+    .about-aside,
+    .about-copy {
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-aside .section-kicker {
+      margin-bottom: 26px;
+    }
+
+    .portrait {
+      position: relative;
+      display: grid;
+      width: 112px;
+      height: 112px;
+      place-items: center;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 27%, #527d64 0%, #315743 58%, #244535 100%);
+      box-shadow: 0 18px 34px rgba(35, 67, 52, 0.17);
+    }
+
+    .portrait::before {
+      position: absolute;
+      inset: -8px;
+      border: 1px solid rgba(47, 89, 71, 0.28);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .portrait::after {
+      position: absolute;
+      top: 5px;
+      right: -18px;
+      width: 40px;
+      height: 20px;
+      border-radius: 100% 0 100% 0;
+      background: #b9c8b8;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35) inset;
+      content: "";
+      transform: rotate(-19deg);
+    }
+
+    .portrait-initial {
+      color: #f8f4e9;
+      font-family: var(--serif);
+      font-size: 42px;
+      line-height: 1;
+      text-shadow: 0 2px 8px rgba(20, 39, 28, 0.18);
+    }
+
+    .portrait-caption {
+      margin: 24px 0 0;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 15px;
+      line-height: 1.6;
+      letter-spacing: 0.05em;
+    }
+
+    .portrait-caption span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 10.5px;
+      letter-spacing: 0.1em;
+    }
+
+    .about-copy h2 {
+      margin: 0 0 18px;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: clamp(1.9rem, 3vw, 2.5rem);
+      font-weight: 500;
+      line-height: 1.3;
+      letter-spacing: -0.03em;
+    }
+
+    .about-copy p {
+      max-width: 650px;
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 15px;
+      line-height: 2;
+      letter-spacing: 0.012em;
+    }
+
+    .about-copy p + p {
+      margin-top: 11px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 26px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tag {
+      padding: 5px 13px;
+      border: 1px solid #bdcbbb;
+      border-radius: 999px;
+      color: var(--green);
+      background: rgba(251, 248, 241, 0.45);
+      font-size: 11.5px;
+      line-height: 1.7;
+      letter-spacing: 0.08em;
+    }
+
+    .about-note {
+      margin-top: 22px !important;
+      color: var(--green) !important;
+      font-family: var(--serif);
+      font-size: 13px !important;
+      letter-spacing: 0.03em;
+    }
+
+    .about-note span {
+      display: inline-block;
+      margin-right: 6px;
+      padding-bottom: 1px;
+      border-bottom: 1px solid rgba(47, 89, 71, 0.35);
+      font-family: var(--sans);
+      font-size: 10px;
+      letter-spacing: 0.1em;
+    }
+
+    /* ---------- 页脚 ---------- */
+
+    .site-footer {
+      padding: clamp(2.7rem, 4vw, 3.8rem) 0 2.3rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-mark {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border: 1px solid rgba(47, 89, 71, 0.46);
+      border-radius: 50%;
+      color: var(--green);
+      font-family: var(--serif);
+      font-size: 13px;
+      line-height: 1;
+    }
+
+    .footer-line {
+      max-width: 22em;
+      margin: 18px 0 0;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+      line-height: 1.8;
+      letter-spacing: 0.04em;
+      text-wrap: balance;
+    }
+
+    .footer-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 10.5px;
+      line-height: 1.8;
+      letter-spacing: 0.11em;
+    }
+
+    .footer-top {
+      color: var(--green);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.25s ease;
+    }
+
+    .footer-top:hover {
+      border-bottom-color: currentColor;
+    }
+
+    .footer-separator {
+      width: 14px;
+      height: 1px;
+      background: var(--line);
+    }
+
+    /* ---------- 蓝色 OP 主题 ---------- */
+
+    .site-header {
+      background: rgba(232, 247, 255, 0.88);
+      border-bottom: 1px solid rgba(145, 205, 232, 0.7);
+    }
+
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      border: 0;
+      border-radius: 13px;
+      color: #ffffff;
+      background: linear-gradient(135deg, #67d6ff 0%, #218bdc 58%, #0f63a0 100%);
+      box-shadow: 0 4px 0 rgba(13, 81, 128, 0.18);
+      font-family: var(--jp);
+      font-size: 17px;
+      font-weight: 800;
+    }
+
+    .brand-mark::after {
+      bottom: 4px;
+      width: 5px;
+      height: 5px;
+      background: var(--yellow);
+      opacity: 1;
+    }
+
+    .brand-name {
+      color: var(--ink);
+      font-family: var(--jp);
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+    }
+
+    .brand-latin {
+      color: var(--green);
+      font-size: 8.5px;
+      letter-spacing: 0.16em;
+    }
+
+    .nav-link {
+      color: var(--ink-soft);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+    }
+
+    .nav-link::after {
+      bottom: 0;
+      height: 3px;
+      border-radius: 99px;
+      background: var(--yellow);
+    }
+
+    .nav-link:hover,
+    .nav-link[aria-current] {
+      color: var(--green-deep);
+    }
+
+    .hero {
+      padding-top: clamp(3.8rem, 6.5vw, 5.5rem);
+      padding-bottom: clamp(4.6rem, 7.5vw, 6.8rem);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      margin: 0 0 24px;
+      padding: 6px 12px;
+      border: 1px solid #b9e5f8;
+      border-radius: 999px;
+      color: #0b5b8b;
+      background: rgba(255, 255, 255, 0.74);
+      box-shadow: 0 2px 0 rgba(25, 113, 166, 0.06);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+    }
+
+    .eyebrow-rule {
+      width: 22px;
+      height: 2px;
+      border-radius: 99px;
+      background: var(--yellow);
+    }
+
+    .hero-title {
+      max-width: 11em;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5.2vw, 4.05rem);
+      font-weight: 800;
+      line-height: 1.18;
+      letter-spacing: -0.045em;
+    }
+
+    .hero-title-jp {
+      display: block;
+      color: var(--ink);
+      font-family: var(--jp);
+      font-size: clamp(3.4rem, 7vw, 6rem);
+      font-weight: 800;
+      line-height: 1.06;
+      letter-spacing: -0.05em;
+    }
+
+    .hero-title-jp .jp-accent {
+      color: var(--green);
+    }
+
+    .hero-tagline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 18px 0 0;
+      padding: 7px 13px;
+      border: 1px solid #b9e5f8;
+      border-radius: 999px;
+      color: var(--green-deep);
+      background: rgba(255, 255, 255, 0.68);
+      font-family: var(--sans);
+      font-size: clamp(0.82rem, 1.3vw, 0.95rem);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+    }
+
+    .hero-tagline::before {
+      color: var(--yellow);
+      font-size: 1.1em;
+      content: "✦";
+    }
+
+    .title-accent {
+      color: var(--green);
+      background-image: linear-gradient(to top, rgba(255, 212, 94, 0.8), rgba(255, 212, 94, 0.8) 0.18em, transparent 0.18em);
+      background-position: 0 92%;
+    }
+
+    .hero-lead {
+      margin-top: 22px;
+      color: var(--ink-soft);
+      font-weight: 500;
+      line-height: 1.95;
+    }
+
+    .primary-button {
+      min-height: 52px;
+      padding: 13px 22px;
+      border: 0;
+      border-radius: 999px;
+      color: #ffffff;
+      background: linear-gradient(135deg, #1274b8 0%, #0b5589 100%);
+      box-shadow: 0 6px 0 #0a4b75, 0 16px 26px rgba(19, 100, 152, 0.2);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+    }
+
+    .primary-button:hover {
+      background: linear-gradient(135deg, #0e639e 0%, #0b5589 100%);
+      box-shadow: 0 3px 0 #0a4b75, 0 10px 20px rgba(19, 100, 152, 0.16);
+      transform: translateY(3px);
+      filter: saturate(1.05);
+    }
+
+    .primary-button svg {
+      width: 24px;
+      height: 24px;
+      padding: 5px;
+      border-radius: 50%;
+      color: #143a58;
+      background: var(--yellow);
+    }
+
+    .primary-button:hover svg {
+      transform: translateY(2px);
+    }
+
+    .hero-note {
+      color: var(--ink-soft);
+      font-weight: 600;
+    }
+
+    .note-dot {
+      width: 7px;
+      height: 7px;
+      background: var(--pink);
+      box-shadow: 0 0 0 3px rgba(255, 158, 183, 0.2);
+      opacity: 1;
+    }
+
+    .art-disc {
+      background: radial-gradient(circle at 35% 30%, #fff1ad 0%, #ffd45e 56%, #ffa8c0 100%);
+      opacity: 0.94;
+      filter: none;
+    }
+
+    .art-orbit {
+      border: 1px dashed rgba(18, 116, 184, 0.36);
+    }
+
+    .art-orbit::before {
+      width: 9px;
+      height: 9px;
+      background: var(--pink);
+      box-shadow: 0 0 0 4px rgba(255, 158, 183, 0.16);
+      opacity: 1;
+    }
+
+    .hero-art::before,
+    .hero-art::after {
+      position: absolute;
+      z-index: 4;
+      color: var(--yellow);
+      font-size: 29px;
+      line-height: 1;
+      content: "✦";
+      pointer-events: none;
+      animation: soft-float 5s ease-in-out infinite;
+    }
+
+    .hero-art::before {
+      top: 39px;
+      left: 4px;
+      transform: rotate(-12deg);
+    }
+
+    .hero-art::after {
+      right: 2px;
+      bottom: 62px;
+      color: var(--pink);
+      font-size: 21px;
+      animation-delay: 0.9s;
+    }
+
+    .postcard {
+      border: 1px solid #b9e3f7;
+      border-radius: 18px;
+      background: #ffffff;
+      box-shadow: 10px 12px 0 rgba(84, 199, 245, 0.16), 0 24px 40px rgba(27, 104, 151, 0.12);
+      transform: rotate(-2.3deg);
+    }
+
+    .postcard::before {
+      position: absolute;
+      top: -11px;
+      left: 40px;
+      z-index: 4;
+      width: 82px;
+      height: 20px;
+      border: 1px solid rgba(220, 178, 44, 0.32);
+      border-radius: 2px;
+      background: rgba(255, 212, 94, 0.82);
+      content: "";
+      transform: rotate(-4deg);
+    }
+
+    .hero-art:hover .postcard {
+      transform: rotate(-0.8deg) translateY(-4px);
+    }
+
+    .postcard-head {
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    .postcard-scene {
+      border-radius: 150px 150px 14px 14px;
+      background: #c9efff;
+      box-shadow: inset 0 0 0 1px rgba(18, 116, 184, 0.12);
+    }
+
+    .postcard-scene::before {
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.25), transparent 42%, rgba(14, 86, 133, 0.1)),
+        radial-gradient(circle at 50% 105%, transparent 45%, rgba(26, 94, 132, 0.1));
+    }
+
+    .postcard-scene::after {
+      background-image: radial-gradient(rgba(18, 76, 108, 0.15) 0.55px, transparent 0.75px);
+      opacity: 0.2;
+    }
+
+    .caption-en {
+      color: var(--green);
+    }
+
+    .caption-cn {
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 21px;
+      font-weight: 800;
+    }
+
+    .postmark {
+      border-color: rgba(18, 116, 184, 0.65);
+      color: var(--green-deep);
+      background: rgba(255, 255, 255, 0.65);
+      font-family: var(--jp);
+      font-weight: 700;
+    }
+
+    .postmark::before {
+      border-color: rgba(18, 116, 184, 0.25);
+    }
+
+    .art-note {
+      border: 1px solid #e6be4a;
+      border-radius: 8px;
+      color: #5b4300;
+      background: var(--yellow);
+      box-shadow: 4px 4px 0 rgba(18, 116, 184, 0.13);
+      font-family: var(--jp);
+      font-weight: 700;
+      transform: rotate(-2deg);
+    }
+
+    .playing-badge {
+      position: absolute;
+      top: 26px;
+      right: 2px;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 11px;
+      border: 1px solid #bae3f5;
+      border-radius: 999px;
+      color: #0b5b8b;
+      background: #ffffff;
+      box-shadow: 3px 4px 0 rgba(18, 116, 184, 0.11);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.11em;
+      transform: rotate(2deg);
+    }
+
+    .equalizer {
+      display: flex;
+      align-items: flex-end;
+      gap: 2px;
+      width: 14px;
+      height: 12px;
+    }
+
+    .equalizer i {
+      display: block;
+      width: 2px;
+      height: 11px;
+      border-radius: 2px;
+      background: var(--pink);
+      transform-origin: bottom;
+      animation: equalize 0.9s ease-in-out infinite;
+    }
+
+    .equalizer i:nth-child(2) {
+      height: 8px;
+      background: var(--green);
+      animation-delay: 0.15s;
+    }
+
+    .equalizer i:nth-child(3) {
+      height: 5px;
+      background: var(--yellow);
+      animation-delay: 0.3s;
+    }
+
+    .writing {
+      border-top: 2px dashed #a7d9ef;
+    }
+
+    .section-kicker {
+      color: var(--green);
+      font-weight: 700;
+      letter-spacing: 0.16em;
+    }
+
+    .section-kicker::before {
+      color: var(--yellow);
+      content: "✦";
+      font-size: 11px;
+    }
+
+    .section-kicker .kicker-slash {
+      color: var(--pink);
+    }
+
+    .section-title {
+      color: var(--ink);
+      font-family: var(--serif);
+      font-weight: 800;
+      letter-spacing: -0.035em;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .filter-group {
+      border: 1px solid #bce4f6;
+      background: rgba(255, 255, 255, 0.82);
+      box-shadow: 0 4px 12px rgba(29, 110, 157, 0.06);
+    }
+
+    .filter-button {
+      color: var(--ink-soft);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    .filter-button:hover {
+      color: var(--green-deep);
+      background: #e2f6ff;
+    }
+
+    .filter-button[aria-pressed="true"] {
+      color: #ffffff;
+      background: linear-gradient(135deg, #1274b8, #0b5589);
+      box-shadow: 0 4px 10px rgba(14, 99, 158, 0.22);
+    }
+
+    .filter-result {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .post-card {
+      --card-accent: var(--green);
+      --card-soft: #e8f7ff;
+      border: 1px solid #b8e2f5;
+      border-radius: 22px;
+      background: #ffffff;
+      box-shadow: 6px 7px 0 rgba(84, 199, 245, 0.13), 0 16px 30px rgba(27, 104, 151, 0.055);
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .post-card[data-category="study"] {
+      --card-accent: var(--pink-dark);
+      --card-soft: #fff0f5;
+      border-color: #f5cade;
+    }
+
+    .post-card::before {
+      height: 4px;
+      border-radius: 22px 22px 0 0;
+      background: linear-gradient(90deg, var(--card-accent), var(--yellow));
+    }
+
+    .post-card:hover,
+    .post-card:focus-within {
+      border-color: #79c9ee;
+      background: #ffffff;
+      box-shadow: 9px 11px 0 rgba(84, 199, 245, 0.16), 0 22px 34px rgba(27, 104, 151, 0.08);
+      transform: translateY(-5px) rotate(-0.2deg);
+    }
+
+    .post-card.is-open {
+      border-color: #79c9ee;
+      background: #ffffff;
+      box-shadow: 9px 11px 0 rgba(84, 199, 245, 0.15), 0 22px 34px rgba(27, 104, 151, 0.07);
+    }
+
+    .post-category {
+      padding: 4px 10px;
+      border-radius: 999px;
+      color: var(--card-accent);
+      background: var(--card-soft);
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+    }
+
+    .post-category::before {
+      width: 6px;
+      height: 6px;
+      background: var(--card-accent);
+    }
+
+    .post-number {
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border: 1px solid #d6ebf6;
+      border-radius: 50%;
+      color: var(--green);
+      background: #f8fdff;
+      font-size: 10.5px;
+      font-weight: 700;
+      line-height: 1;
+      opacity: 1;
+    }
+
+    .post-meta {
+      font-weight: 500;
+      letter-spacing: 0.05em;
+    }
+
+    .meta-separator {
+      background: #b7d9ea;
+    }
+
+    .post-title {
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: clamp(1.35rem, 2vw, 1.55rem);
+      font-weight: 800;
+      line-height: 1.5;
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+    }
+
+    .post-excerpt {
+      color: var(--ink-soft);
+    }
+
+    .card-footer {
+      border-top: 1px dashed #d2e8f4;
+    }
+
+    .reading-time {
+      color: var(--muted);
+    }
+
+    .read-more {
+      min-height: 34px;
+      padding: 6px 12px;
+      border: 1px solid #bfe4f6;
+      border-radius: 999px;
+      background: #eefaff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .read-more::after {
+      display: none;
+    }
+
+    .read-more:hover {
+      color: var(--green-deep);
+      background: #d9f3ff;
+      transform: translateY(-1px);
+    }
+
+    .read-more[aria-expanded="true"] {
+      border-color: #f2c8da;
+      color: var(--pink-dark);
+      background: #fff0f5;
+    }
+
+    .post-body {
+      padding: 18px 18px 16px;
+      border: 1px solid #c7e8f8;
+      border-radius: 16px;
+      background: linear-gradient(180deg, #f5fcff, #eef9ff);
+    }
+
+    .post-body p {
+      color: var(--ink-soft);
+    }
+
+    .post-body p:first-child::first-letter {
+      color: var(--green);
+    }
+
+    .post-body .post-signoff {
+      border-top: 1px dashed #c6e4f2;
+      color: var(--green-deep);
+    }
+
+    .about-panel {
+      border: 1px solid #b7e2f5;
+      border-radius: 26px;
+      background: linear-gradient(135deg, #ffffff 0%, #eefaff 58%, #e0f5ff 100%);
+      box-shadow: 7px 8px 0 rgba(84, 199, 245, 0.12), 0 18px 34px rgba(27, 104, 151, 0.055);
+    }
+
+    .about-panel::before {
+      border-color: rgba(18, 116, 184, 0.14);
+      box-shadow: 0 0 0 28px rgba(84, 199, 245, 0.035), 0 0 0 58px rgba(84, 199, 245, 0.022);
+    }
+
+    .portrait {
+      background: radial-gradient(circle at 32% 24%, #7ce0ff 0%, #2c9bde 55%, #0d5f98 100%);
+      box-shadow: 0 16px 30px rgba(23, 104, 154, 0.2);
+    }
+
+    .portrait::before {
+      border: 1px dashed rgba(18, 116, 184, 0.38);
+    }
+
+    .portrait::after {
+      background: var(--yellow);
+      border: 1px solid #e3bd4e;
+      box-shadow: none;
+    }
+
+    .portrait-initial {
+      color: #ffffff;
+      font-family: var(--jp);
+      font-weight: 800;
+      text-shadow: 2px 2px 0 rgba(10, 80, 120, 0.18);
+    }
+
+    .portrait-caption span {
+      color: var(--muted);
+    }
+
+    .about-copy h2 {
+      color: var(--ink);
+      font-family: var(--serif);
+      font-weight: 800;
+      letter-spacing: -0.035em;
+    }
+
+    .about-copy p {
+      color: var(--ink-soft);
+    }
+
+    .tag {
+      border: 1px solid #aadcf3;
+      background: #ffffff;
+      color: var(--green-deep);
+      font-weight: 600;
+      box-shadow: 2px 2px 0 rgba(84, 199, 245, 0.1);
+    }
+
+    .tag:nth-child(2n) {
+      border-color: #f3c6d7;
+      color: var(--pink-dark);
+      background: #fff7fa;
+      box-shadow: 2px 2px 0 rgba(255, 158, 183, 0.11);
+    }
+
+    .tag:nth-child(3n) {
+      border-color: #efd88b;
+      color: #6b4e00;
+      background: #fffbeb;
+      box-shadow: 2px 2px 0 rgba(255, 212, 94, 0.15);
+    }
+
+    .about-note {
+      color: var(--green-deep) !important;
+      font-weight: 600;
+    }
+
+    .about-note span {
+      border-bottom-color: rgba(18, 116, 184, 0.35);
+    }
+
+    .oshi-note {
+      position: relative;
+      margin-top: clamp(1.8rem, 3.2vw, 2.6rem);
+      overflow: hidden;
+      padding: clamp(1.6rem, 3.5vw, 2.8rem);
+      border: 1px solid #a9dcf3;
+      border-radius: 26px;
+      background:
+        radial-gradient(circle at 92% 10%, rgba(255, 212, 94, 0.48), transparent 13rem),
+        radial-gradient(circle at 8% 100%, rgba(255, 158, 183, 0.18), transparent 16rem),
+        linear-gradient(145deg, #ffffff 0%, #eefaff 55%, #e1f5ff 100%);
+      box-shadow: 8px 9px 0 rgba(84, 199, 245, 0.13), 0 20px 36px rgba(27, 104, 151, 0.06);
+    }
+
+    .oshi-note::before {
+      position: absolute;
+      top: -1.2rem;
+      right: 2%;
+      color: rgba(18, 116, 184, 0.055);
+      font-family: var(--jp);
+      font-size: clamp(8rem, 13vw, 12rem);
+      font-weight: 800;
+      line-height: 1;
+      content: "推し";
+      pointer-events: none;
+    }
+
+    .oshi-top {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .oshi-note .section-kicker {
+      margin: 0;
+    }
+
+    .oshi-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 11px;
+      border: 1px solid #e8b6c8;
+      border-radius: 999px;
+      color: var(--pink-dark);
+      background: #fff0f5;
+      font-family: var(--jp);
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      transform: rotate(2deg);
+    }
+
+    .oshi-badge::before {
+      font-size: 11px;
+      content: "♥";
+    }
+
+    .oshi-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: clamp(2rem, 5vw, 4.5rem);
+      margin-top: 24px;
+    }
+
+    .oshi-jp {
+      margin: 0 0 8px;
+      color: var(--green);
+      font-family: var(--jp);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+    }
+
+    .oshi-intro h3 {
+      margin: 0;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 3.1vw, 2.6rem);
+      font-weight: 800;
+      line-height: 1.3;
+      letter-spacing: -0.04em;
+    }
+
+    .oshi-name {
+      color: var(--green);
+      background-image: linear-gradient(to top, rgba(255, 212, 94, 0.72), rgba(255, 212, 94, 0.72) 0.14em, transparent 0.14em);
+      background-position: 0 92%;
+    }
+
+    .oshi-lede {
+      margin: 16px 0 0;
+      color: var(--ink-soft);
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .oshi-quote {
+      position: relative;
+      margin: 24px 0 0;
+      padding: 15px 18px;
+      border: 1px solid #ecd785;
+      border-radius: 14px 14px 14px 4px;
+      color: #5b4300;
+      background: rgba(255, 249, 220, 0.92);
+      box-shadow: 3px 3px 0 rgba(255, 212, 94, 0.16);
+      font-family: var(--serif);
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.8;
+    }
+
+    .oshi-reasons {
+      display: grid;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .oshi-reasons li {
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr);
+      align-items: start;
+      gap: 14px;
+    }
+
+    .oshi-number {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      place-items: center;
+      border: 1px solid #a9dcf3;
+      border-radius: 50%;
+      color: var(--green);
+      background: #ffffff;
+      box-shadow: 2px 3px 0 rgba(84, 199, 245, 0.12);
+      font-family: var(--serif);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .oshi-reasons li:nth-child(2) .oshi-number {
+      border-color: #f0c8d8;
+      color: var(--pink-dark);
+      box-shadow: 2px 3px 0 rgba(255, 158, 183, 0.15);
+    }
+
+    .oshi-reasons li:nth-child(3) .oshi-number {
+      border-color: #ead584;
+      color: #6b4e00;
+      background: #fffbeb;
+      box-shadow: 2px 3px 0 rgba(255, 212, 94, 0.2);
+    }
+
+    .oshi-reasons h4 {
+      margin: 4px 0 5px;
+      color: var(--ink);
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+
+    .oshi-reasons p {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 13.5px;
+      line-height: 1.9;
+    }
+
+    .site-footer {
+      border-top: 2px dashed #a7d9ef;
+    }
+
+    .footer-mark {
+      border: 0;
+      border-radius: 11px;
+      color: #ffffff;
+      background: linear-gradient(135deg, #5dcdf7, #1a7dbe);
+      box-shadow: 0 4px 0 rgba(13, 81, 128, 0.16);
+      font-family: var(--jp);
+      font-weight: 800;
+    }
+
+    .footer-line {
+      font-family: var(--serif);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .footer-top {
+      color: var(--green-deep);
+    }
+
+    @keyframes equalize {
+      0%,
+      100% {
+        transform: scaleY(0.45);
+      }
+      50% {
+        transform: scaleY(1);
+      }
+    }
+
+    @keyframes soft-float {
+      0%,
+      100% {
+        transform: translateY(0) rotate(-12deg);
+      }
+      50% {
+        transform: translateY(-7px) rotate(-4deg);
+      }
+    }
+
+    /* ---------- 响应式 ---------- */
+
+    @media (max-width: 940px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 3.4rem;
+        padding-top: clamp(3.6rem, 7vw, 5rem);
+        padding-bottom: clamp(4.4rem, 7vw, 6rem);
+      }
+
+      .hero-copy {
+        max-width: 720px;
+      }
+
+      .hero-art {
+        width: 100%;
+        max-width: 560px;
+        min-height: 470px;
+        margin-inline: auto;
+      }
+
+      .art-disc {
+        right: 50%;
+        transform: translateX(120px);
+      }
+
+      .art-orbit {
+        width: 420px;
+        height: 420px;
+      }
+
+      .art-note {
+        left: calc(50% - 260px);
+      }
+    }
+
+    @media (max-width: 760px) {
+      main section[id] {
+        scroll-margin-top: 82px;
+      }
+
+      .header-inner {
+        min-height: 66px;
+        gap: 16px;
+      }
+
+      .brand {
+        gap: 9px;
+      }
+
+      .brand-mark {
+        width: 34px;
+        height: 34px;
+        font-size: 15px;
+      }
+
+      .brand-name {
+        font-size: 18px;
+        letter-spacing: 0.08em;
+      }
+
+      .brand-latin {
+        display: none;
+      }
+
+      .site-nav {
+        gap: clamp(0.8rem, 3.5vw, 1.5rem);
+      }
+
+      .nav-link {
+        min-height: 42px;
+        font-size: 13px;
+        letter-spacing: 0.08em;
+      }
+
+      .hero {
+        gap: 2.9rem;
+        padding-top: 3.4rem;
+        padding-bottom: 4.2rem;
+      }
+
+      .eyebrow {
+        margin-bottom: 22px;
+        font-size: 10px;
+        letter-spacing: 0.16em;
+      }
+
+      .hero-lead {
+        margin-top: 24px;
+        font-size: 15.5px;
+        line-height: 1.95;
+      }
+
+      .hero-actions {
+        margin-top: 30px;
+      }
+
+      .hero-art {
+        min-height: 420px;
+      }
+
+      .postcard {
+        width: min(100%, 330px);
+        padding: 13px 13px 17px;
+        transform: rotate(1.4deg);
+      }
+
+      .postcard-scene {
+        height: 238px;
+        border-radius: 135px 135px 2px 2px;
+      }
+
+      .postcard-caption {
+        padding-top: 13px;
+      }
+
+      .caption-cn {
+        font-size: 18px;
+      }
+
+      .postmark {
+        width: 47px;
+        height: 47px;
+        font-size: 9px;
+      }
+
+      .art-disc {
+        width: 255px;
+        height: 255px;
+        top: 10px;
+        transform: translateX(95px);
+      }
+
+      .art-orbit {
+        width: 350px;
+        height: 350px;
+      }
+
+      .art-note {
+        bottom: 2px;
+        left: calc(50% - 230px);
+        font-size: 11px;
+      }
+
+      .section-heading {
+        display: block;
+      }
+
+      .section-intro {
+        max-width: 380px;
+        margin-top: 16px;
+        margin-bottom: 0;
+        font-size: 14px;
+        text-align: left;
+      }
+
+      .section-intro br {
+        display: none;
+      }
+
+      .filter-row {
+        margin-top: 26px;
+      }
+
+      .posts-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+      }
+
+      .post-card {
+        min-height: 0;
+        padding: 26px 24px 22px;
+      }
+
+      .post-title {
+        font-size: 1.4rem;
+      }
+
+      .post-excerpt {
+        margin-bottom: 24px;
+      }
+
+      .about-panel {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+        padding: 30px 24px;
+      }
+
+      .about-aside {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 18px;
+      }
+
+      .about-aside .section-kicker {
+        flex: 0 0 100%;
+        margin-bottom: 0;
+      }
+
+      .portrait {
+        width: 76px;
+        height: 76px;
+        box-shadow: 0 12px 24px rgba(35, 67, 52, 0.15);
+      }
+
+      .portrait-initial {
+        font-size: 30px;
+      }
+
+      .portrait::after {
+        top: 1px;
+        right: -14px;
+        width: 32px;
+        height: 16px;
+      }
+
+      .portrait-caption {
+        margin: 0;
+        font-size: 14px;
+      }
+
+      .about-copy h2 {
+        margin-bottom: 14px;
+      }
+
+      .about-copy p {
+        font-size: 14.5px;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .header-inner {
+        gap: 10px;
+      }
+
+      .brand-name {
+        font-size: 17px;
+      }
+
+      .site-nav {
+        gap: 11px;
+      }
+
+      .nav-link {
+        font-size: 12.5px;
+        letter-spacing: 0.04em;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 13px;
+      }
+
+      .primary-button {
+        width: 100%;
+      }
+
+      .hero-note {
+        padding-left: 2px;
+      }
+
+      .hero-art {
+        min-height: 380px;
+      }
+
+      .postcard {
+        width: min(100%, 300px);
+      }
+
+      .postcard-scene {
+        height: 214px;
+      }
+
+      .art-disc {
+        width: 220px;
+        height: 220px;
+        transform: translateX(72px);
+      }
+
+      .art-orbit {
+        width: 310px;
+        height: 310px;
+      }
+
+      .art-note {
+        display: none;
+      }
+
+      .filter-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 11px;
+        margin-bottom: 18px;
+      }
+
+      .filter-group {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        width: 100%;
+      }
+
+      .filter-button {
+        min-height: 40px;
+        padding: 7px 8px;
+        text-align: center;
+      }
+
+      .filter-result {
+        padding-left: 4px;
+      }
+
+      .post-card {
+        padding: 23px 20px 20px;
+      }
+
+      .post-title {
+        margin-top: 9px;
+        font-size: 1.3rem;
+        line-height: 1.55;
+      }
+
+      .post-excerpt {
+        font-size: 14px;
+      }
+
+      .post-body p {
+        font-size: 14px;
+      }
+
+      .post-body p:first-child::first-letter {
+        font-size: 2.3em;
+      }
+
+      .card-footer {
+        gap: 12px;
+      }
+
+      .about-panel {
+        padding: 27px 20px;
+      }
+
+      .footer-meta {
+        gap: 6px;
+      }
+
+      .footer-separator {
+        width: 10px;
+      }
+    }
+
+    @media (hover: none) {
+      .hero-art:hover .postcard {
+        transform: rotate(1.4deg);
+      }
+
+      .post-card:hover {
+        box-shadow: 6px 7px 0 rgba(84, 199, 245, 0.13), 0 16px 30px rgba(27, 104, 151, 0.055);
+        transform: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+    @media (max-width: 760px) {
+      .playing-badge {
+        top: 12px;
+        right: 0;
+        font-size: 8px;
+        padding: 6px 9px;
+      }
+
+      .hero-art::before {
+        top: 22px;
+        left: 0;
+        font-size: 22px;
+      }
+
+      .hero-art::after {
+        right: 0;
+        bottom: 44px;
+        font-size: 17px;
+      }
+
+      .oshi-note {
+        padding: 26px 22px;
+        border-radius: 22px;
+      }
+
+      .oshi-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 26px;
+      }
+
+      .oshi-intro h3 {
+        font-size: 1.8rem;
+      }
+
+      .oshi-note::before {
+        top: -0.4rem;
+        right: -1rem;
+        font-size: 9rem;
+      }
+
+      .oshi-quote {
+        margin-top: 20px;
+      }
+
+      .postcard-scene {
+        border-radius: 135px 135px 14px 14px;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .eyebrow {
+        gap: 8px;
+        padding: 5px 10px;
+        font-size: 9px;
+        letter-spacing: 0.1em;
+      }
+
+      .playing-badge {
+        top: 2px;
+        gap: 5px;
+        padding: 5px 8px;
+        font-size: 7.5px;
+        letter-spacing: 0.05em;
+      }
+
+      .playing-badge .equalizer {
+        width: 10px;
+        height: 10px;
+      }
+
+      .oshi-note {
+        padding: 22px 18px;
+        border-radius: 20px;
+      }
+
+      .oshi-top {
+        align-items: flex-start;
+      }
+
+      .oshi-intro h3 {
+        font-size: 1.55rem;
+      }
+
+      .oshi-lede {
+        font-size: 13.5px;
+      }
+
+      .oshi-reasons {
+        gap: 16px;
+      }
+
+      .oshi-reasons li {
+        grid-template-columns: 34px minmax(0, 1fr);
+        gap: 11px;
+      }
+
+      .oshi-number {
+        width: 34px;
+        height: 34px;
+        font-size: 10px;
+      }
+
+      .oshi-reasons h4 {
+        font-size: 14px;
+      }
+
+      .oshi-reasons p {
+        font-size: 13px;
+      }
+
+      .post-body {
+        padding: 16px 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="file:///C:/Users/ASUS/Documents/deepseek-harness/default-workspace/index.html#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="file:///C:/Users/ASUS/Documents/deepseek-harness/default-workspace/index.html#home" aria-label="神的日常，返回首页">
+        <span class="brand-mark" aria-hidden="true">神</span>
+        <span class="brand-copy">
+          <span class="brand-name" lang="ja">神の日常</span>
+          <span class="brand-latin">KAMI NO NICHIJŌ</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="主要导航">
+        <a class="nav-link" href="file:///C:/Users/ASUS/Documents/deepseek-harness/default-workspace/index.html#home" aria-current="location">首页</a>
+        <a class="nav-link" href="file:///C:/Users/ASUS/Documents/deepseek-harness/default-workspace/index.html#writing">文章</a>
+        <a class="nav-link" href="file:///C:/Users/ASUS/Documents/deepseek-harness/default-workspace/index.html#about">关于我</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 开场：想换欢迎语，修改这里的文字即可 -->
+    <section class="hero shell" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span>EP. 01</span>
+          <span class="eyebrow-rule" aria-hidden="true"></span>
+          <span>2026 · SUMMER</span>
+        </p>
+
+        <h1 class="hero-title" id="hero-title">
+          <span class="hero-title-jp" lang="ja"><span class="jp-accent">神</span>の日常</span>
+        </h1>
+        <p class="hero-tagline">夏天、日常，正在放送。</p>
+
+        <p class="hero-lead">
+          你好，我是陈宇钧，一名刚入学的计算机新生。这个夏天，我在这里记录三角洲战况、补番、耳机里的薛之谦和李荣浩，还有在 Steam 里当英雄的晚上。
+        </p>
+
+        <div class="hero-actions">
+          <a class="primary-button" href="file:///C:/Users/ASUS/Documents/deepseek-harness/default-workspace/index.html#writing">
+            <span>看看最近写了什么</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M12 4v16M6 14l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </a>
+          <p class="hero-note"><span class="note-dot" aria-hidden="true"></span>4 篇日常 + 1 则推し笔记 · 夏日放送中</p>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <span class="art-disc"></span>
+        <span class="art-orbit"></span>
+
+        <div class="postcard">
+          <div class="postcard-head">
+            <span>Opening · No. 01</span>
+            <span>Summer 2026</span>
+          </div>
+
+          <div class="postcard-scene">
+            <svg class="scene-svg" viewBox="0 0 320 280" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs>
+                <lineargradient id="sky-gradient" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#68cef8"></stop>
+                  <stop offset="0.55" stop-color="#bdeeff"></stop>
+                  <stop offset="1" stop-color="#f4fdff"></stop>
+                </lineargradient>
+                <lineargradient id="hill-back" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#b3e8fb"></stop>
+                  <stop offset="1" stop-color="#8dd6f2"></stop>
+                </lineargradient>
+                <lineargradient id="hill-mid" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#72c6e8"></stop>
+                  <stop offset="1" stop-color="#439fd0"></stop>
+                </lineargradient>
+                <lineargradient id="hill-front" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#2b82b3"></stop>
+                  <stop offset="1" stop-color="#15587f"></stop>
+                </lineargradient>
+              </defs>
+
+              <rect width="320" height="280" fill="url(#sky-gradient)"></rect>
+              <circle cx="224" cy="77" r="39" fill="#ffd45e"></circle>
+              <circle cx="224" cy="77" r="50" fill="none" stroke="#ffffff" stroke-opacity="0.42"></circle>
+
+              <g fill="#ffffff">
+                <g opacity="0.88">
+                  <ellipse cx="72" cy="89" rx="36" ry="11"></ellipse>
+                  <ellipse cx="94" cy="80" rx="25" ry="16"></ellipse>
+                  <ellipse cx="48" cy="82" rx="21" ry="12"></ellipse>
+                </g>
+                <g opacity="0.62">
+                  <ellipse cx="258" cy="123" rx="27" ry="8"></ellipse>
+                  <ellipse cx="274" cy="117" rx="17" ry="11"></ellipse>
+                  <ellipse cx="241" cy="118" rx="13" ry="7"></ellipse>
+                </g>
+                <ellipse cx="171" cy="56" rx="18" ry="5" opacity="0.45"></ellipse>
+              </g>
+
+              <path d="M-20 196C40 170 100 180 156 193C214 206 270 199 340 170V280H-20Z" fill="url(#hill-back)"></path>
+              <path d="M-20 224C50 195 105 218 165 229C228 241 285 238 340 207V280H-20Z" fill="url(#hill-mid)"></path>
+              <path d="M-20 257C45 227 100 240 155 250C221 262 280 269 340 237V280H-20Z" fill="url(#hill-front)"></path>
+
+              <g fill="none" stroke="#174b6b" stroke-linecap="round">
+                <path d="M247 242C247 213 244 189 252 160" stroke-width="2.2"></path>
+                <path d="M249 203C233 189 224 176 219 160" stroke-width="1.25"></path>
+                <path d="M250 193C264 178 274 166 278 150" stroke-width="1.25"></path>
+                <path d="M251 177C240 165 234 156 232 143" stroke-width="1"></path>
+                <path d="M252 166C264 156 270 147 272 136" stroke-width="1"></path>
+              </g>
+
+              <g fill="#194a68">
+                <path d="M219 161C232 161 244 168 251 178C236 180 224 174 219 161Z"></path>
+                <path d="M223 177C236 179 245 186 249 196C235 196 225 189 223 177Z"></path>
+                <path d="M278 150C265 150 254 157 248 167C262 169 274 163 278 150Z"></path>
+                <path d="M273 169C261 171 252 178 249 188C263 188 271 181 273 169Z"></path>
+                <path d="M233 143C244 143 254 149 259 158C247 160 237 154 233 143Z"></path>
+              </g>
+
+              <g fill="none" stroke="#245f82" stroke-linecap="round" opacity="0.5">
+                <path d="M42 239C39 225 41 212 46 199" stroke-width="1.4"></path>
+                <path d="M44 225C35 218 30 210 29 200" stroke-width="1"></path>
+                <path d="M45 216C54 208 59 201 61 192" stroke-width="1"></path>
+                <path d="M67 248C64 236 66 225 70 214" stroke-width="1.2"></path>
+              </g>
+              <g fill="#2e7597" opacity="0.65">
+                <path d="M30 200C39 201 46 206 49 212C41 213 34 210 30 200Z"></path>
+                <path d="M61 192C52 194 46 199 43 206C52 206 59 201 61 192Z"></path>
+              </g>
+
+              <path d="M92 139C121 123 143 122 171 128" fill="none" stroke="#ffffff" stroke-opacity="0.8" stroke-width="1.6" stroke-dasharray="3 5"></path>
+              <g transform="translate(174 118) rotate(8)">
+                <path d="M0 0L38 8L16 19L12 33L7 21L0 0Z" fill="#ffffff" stroke="#277da7" stroke-width="1.2" stroke-linejoin="round"></path>
+                <path d="M0 0L16 19" fill="none" stroke="#a7deef" stroke-width="1"></path>
+              </g>
+
+              <g fill="#ffffff">
+                <path d="M65 122L68 132L78 135L68 138L65 148L62 138L52 135L62 132Z" opacity="0.9"></path>
+                <path d="M288 157L290 163L296 165L290 167L288 173L286 167L280 165L286 163Z" opacity="0.76"></path>
+              </g>
+              <path d="M300 56L302 62L308 64L302 66L300 72L298 66L292 64L298 62Z" fill="#ff9eb7" opacity="0.85"></path>
+
+              <g fill="none" stroke="#2f779b" stroke-linecap="round" opacity="0.4">
+                <path d="M148 39C155 35 161 35 168 38" stroke-width="1"></path>
+                <path d="M163 49C169 46 175 46 181 48" stroke-width="0.9"></path>
+              </g>
+              <path d="M0 270C58 258 107 264 159 274" fill="none" stroke="#f4fdff" stroke-opacity="0.18"></path>
+            </svg>
+          </div>
+
+          <div class="postcard-caption">
+            <div>
+              <span class="caption-en">A slice of summer</span>
+              <p class="caption-cn">今天也是夏日的一集。</p>
+            </div>
+            <span class="postmark" lang="ja">神の<br>日常</span>
+          </div>
+        </div>
+
+        <p class="art-note">这个夏天也要闪闪发光。</p>
+        <div class="playing-badge" aria-hidden="true">
+          <span class="equalizer"><i></i><i></i><i></i></span>
+          <span>NOW PLAYING · EP.01</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 文章区：每篇文章的正文都在对应卡片内部 -->
+    <section class="writing shell" id="writing" aria-labelledby="writing-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">01 <span class="kicker-slash">/</span> Episodes</p>
+          <h2 class="section-title" id="writing-title">最近写下的</h2>
+        </div>
+        <p class="section-intro">四集短短的夏日日常：打游戏、补番、听歌，<br>还有一页写给杏菜的推し笔记。</p>
+      </div>
+
+      <div class="filter-row">
+        <div class="filter-group" role="group" aria-label="按分类筛选文章">
+          <button class="filter-button" type="button" data-filter="all" aria-pressed="true" aria-controls="post-grid">全部</button>
+          <button class="filter-button" type="button" data-filter="life" aria-pressed="false" aria-controls="post-grid">生活</button>
+          <button class="filter-button" type="button" data-filter="study" aria-pressed="false" aria-controls="post-grid">学习</button>
+        </div>
+        <p class="filter-result" id="filter-result" role="status">共 4 篇日常</p>
+      </div>
+
+      <div class="posts-grid" id="post-grid">
+        <!-- 01 · 学习 -->
+        <article class="post-card" data-category="study" data-post="">
+          <div class="post-card-head">
+            <span class="post-category">学习</span>
+            <span class="post-number" aria-hidden="true">01</span>
+          </div>
+
+          <p class="post-meta">
+            <time datetime="2026-07-24">2026.07.24</time>
+            <span class="meta-separator" aria-hidden="true"></span>
+            <span>周五 · 三排</span>
+          </p>
+
+          <h3 class="post-title">在航天基地游龙：三角洲的一点生存心得</h3>
+          <p class="post-excerpt">航天基地的枪声一响，先别急着冲。我的打法是先听脚步、卡住撤离点，再用一条烟线把整队人带出去。</p>
+
+          <div class="card-footer">
+            <span class="reading-time">约 2 分钟</span>
+            <button class="read-more" type="button" aria-expanded="false" aria-controls="post-1-body">
+              <span class="read-more-text">阅读全文</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="post-body" id="post-1-body" hidden="">
+            <p>最近三角洲打得最多的一张图是航天基地。刚开始我总是第一个倒，后来才慢慢明白：所谓的“游龙”，不是一直往前冲，而是先活着，再找机会把节奏抢回来。</p>
+            <p>我现在的固定路线是，先听出生点附近的枪声，判断哪一队会先碰面；进核心区之前留一颗烟，撤离倒计时开始后不贪最后一个盒子。被两队夹住时，往有掩体的一侧退，比原地换弹更有用。</p>
+            <p>当然，野排总会有不报点的队友，也总会有落地成盒的晚上。可前两天有一把，我残血从侧门绕出去，拉起了两个队友，最后一起挤进撤离点。屏幕暗下来的那一刻，我真的觉得自己在航天基地游了一圈龙。</p>
+            <p class="post-signoff">写于 7 月 24 日，今晚的最后一把成功撤离。</p>
+          </div>
+        </article>
+
+        <!-- 02 · 生活 -->
+        <article class="post-card" data-category="life" data-post="">
+          <div class="post-card-head">
+            <span class="post-category">生活</span>
+            <span class="post-number" aria-hidden="true">02</span>
+          </div>
+
+          <p class="post-meta">
+            <time datetime="2026-07-19">2026.07.19</time>
+            <span class="meta-separator" aria-hidden="true"></span>
+            <span>周日 · 空调房</span>
+          </p>
+
+          <h3 class="post-title">周末补番：《孤独摇滚》和《为美好世界献上祝福》</h3>
+          <p class="post-excerpt">《孤独摇滚》让我笑到拍桌，《为美好世界献上祝福》又把我拉回那种吵吵闹闹的日常。两部番陪我把周末过成了小长假。</p>
+
+          <div class="card-footer">
+            <span class="reading-time">约 2 分钟</span>
+            <button class="read-more" type="button" aria-expanded="false" aria-controls="post-2-body">
+              <span class="read-more-text">阅读全文</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="post-body" id="post-2-body" hidden="">
+            <p>本来只打算看两集下饭，结果《孤独摇滚》一开场就把我按在椅子上。社恐少女抱着吉他，想被看见又害怕被看见，那种心情我居然看得有点心虚。</p>
+            <p>笑完之后，我又点开了《为美好世界献上祝福》。废柴女神、爆裂魔法、欠债和永远吃不完的晚饭，一群不靠谱的人把异世界过成了鸡飞狗跳的日常。可看着他们吵吵闹闹，我反而觉得夏天没那么热了。</p>
+            <p>周末就这样被两部番填满。没有出门，没有学习，只有冰可乐和进度条。以前总觉得休息也要有产出，现在觉得，能和朋友在群里为一句台词笑半小时，也算把日子过好了。</p>
+            <p class="post-signoff">写于 7 月 19 日，片尾曲还在脑内循环。</p>
+          </div>
+        </article>
+
+        <!-- 03 · 生活 -->
+        <article class="post-card" data-category="life" data-post="">
+          <div class="post-card-head">
+            <span class="post-category">生活</span>
+            <span class="post-number" aria-hidden="true">03</span>
+          </div>
+
+          <p class="post-meta">
+            <time datetime="2026-07-12">2026.07.12</time>
+            <span class="meta-separator" aria-hidden="true"></span>
+            <span>周日 · 黄昏</span>
+          </p>
+
+          <h3 class="post-title">薛之谦和李荣浩的歌，把我带回了几年前</h3>
+          <p class="post-excerpt">随机播放切到《演员》，又跳到《年少有为》。耳机里是别人的故事，脑子里却全是自己的高中和高中以前。</p>
+
+          <div class="card-footer">
+            <span class="reading-time">约 2 分钟</span>
+            <button class="read-more" type="button" aria-expanded="false" aria-controls="post-3-body">
+              <span class="read-more-text">阅读全文</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="post-body" id="post-3-body" hidden="">
+            <p>晚上整理旧手机，随机播到《演员》，又自动跳到《年少有为》。房间很安静，窗外还有一点夏天的风，我却一下子想起高中晚自习结束后的那条路。</p>
+            <p>那时候我总戴着耳机骑车回家，薛之谦唱遗憾，李荣浩唱普通人的不甘心。歌里的故事离我很远，可那种“还不想认输”的劲，和当时的我贴得很近。</p>
+            <p>现在再听，已经不会像以前那样把歌词当成自己的日记了。可有些旋律一响，过去还是会回来：路灯、校服、还没写完的卷子，还有那个总觉得明天会更厉害的自己。</p>
+            <p class="post-signoff">写于 7 月 12 日，单曲循环到窗外全黑。</p>
+          </div>
+        </article>
+
+        <!-- 04 · 生活 -->
+        <article class="post-card" data-category="life" data-post="">
+          <div class="post-card-head">
+            <span class="post-category">生活</span>
+            <span class="post-number" aria-hidden="true">04</span>
+          </div>
+
+          <p class="post-meta">
+            <time datetime="2026-07-06">2026.07.06</time>
+            <span class="meta-separator" aria-hidden="true"></span>
+            <span>周一 · 深夜</span>
+          </p>
+
+          <h3 class="post-title">在 Steam 里当英雄：蜘蛛侠、黑客和里昂</h3>
+          <p class="post-excerpt">这一周我在 Steam 里当了蜘蛛侠、黑客和里昂。现实里没拯救世界，但每次戴上耳机，都像短暂地借到了另一种人生。</p>
+
+          <div class="card-footer">
+            <span class="reading-time">约 2 分钟</span>
+            <button class="read-more" type="button" aria-expanded="false" aria-controls="post-4-body">
+              <span class="read-more-text">阅读全文</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="post-body" id="post-4-body" hidden="">
+            <p>这周在 Steam 上轮流打开了几款游戏。白天在《漫威蜘蛛侠：重制版》的纽约楼顶荡蛛丝，晚上切进《看门狗 2》的监控画面，最后又回到《生化危机 4 重制版》里，跟着里昂一路救人，或者被追着跑。</p>
+            <p>当蜘蛛侠的时候，我总忍不住在楼顶多停两秒，看夕阳落在街道上；当黑客的时候，最爽的是不进门就把事情办完；而当里昂的时候，我只想省下每一发子弹，然后活着走出那个村庄。</p>
+            <p>现实里没有超能力，也没有丧尸，第二天照样要上课、写代码。可每次关上游戏，我都像刚从另一个世界回来，身上还留着一点“我可以搞定”的错觉。也许这就是游戏最厉害的地方：让我短暂地相信，自己真的能拯救世界。</p>
+            <p class="post-signoff">写于 7 月 6 日，关掉游戏时天已经亮了。</p>
+          </div>
+        </article>
+      </div>
+
+      <section class="oshi-note" aria-labelledby="oshi-title">
+        <div class="oshi-top">
+          <p class="section-kicker">Special <span class="kicker-slash">/</span> Oshi Note</p>
+          <span class="oshi-badge" lang="ja">推し</span>
+        </div>
+
+        <div class="oshi-grid">
+          <div class="oshi-intro">
+            <p class="oshi-jp" lang="ja">八奈見杏菜</p>
+            <h3 id="oshi-title">为什么喜欢<br><span class="oshi-name">八奈见杏菜</span></h3>
+            <p class="oshi-lede">在《败北女主太多了》里，她不是站在聚光灯中央的女主，却是我最想在日常里遇见的那一个。</p>
+            <p class="oshi-quote">“败北”不是故事结束，是日常开始的地方。</p>
+          </div>
+
+          <ol class="oshi-reasons">
+            <li>
+              <span class="oshi-number" aria-hidden="true">01</span>
+              <div>
+                <h4>她会输，但不会输掉生活</h4>
+                <p>告白失败以后，她还是会饿、会吐槽、会认真吃完下一顿饭。那种有点笨拙的复原力，比“永远赢”更让我心动。</p>
+              </div>
+            </li>
+            <li>
+              <span class="oshi-number" aria-hidden="true">02</span>
+              <div>
+                <h4>她的喜欢藏在很小的动作里</h4>
+                <p>她会记住别人随口说的话，为一点小事高兴很久，也会在转身以后偷偷失落。她不像设定好的角色，像坐在隔壁、会借你橡皮的人。</p>
+              </div>
+            </li>
+            <li>
+              <span class="oshi-number" aria-hidden="true">03</span>
+              <div>
+                <h4>她让我觉得，败北也可以很可爱</h4>
+                <p>不是每段青春都要站在舞台中央。有人负责赢，也有人负责把普通的日常过得亮晶晶。杏菜就是后者。</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </section>
+
+    <!-- 作者介绍：替换名字、简介和标签即可 -->
+    <section class="about shell" id="about" aria-labelledby="about-title">
+      <div class="about-panel">
+        <div class="about-aside">
+          <p class="section-kicker">02 <span class="kicker-slash">/</span> Profile</p>
+          <div class="portrait" aria-hidden="true">
+            <span class="portrait-initial">钧</span>
+          </div>
+          <p class="portrait-caption">陈宇钧<span>计算机 · 大一</span></p>
+        </div>
+
+        <div class="about-copy">
+          <h2 id="about-title">关于陈宇钧</h2>
+          <p>我是陈宇钧，计算机大一新生。白天上课、写代码，傍晚偶尔绕着校园走一圈。平时爱看轻小说和番剧，也喜欢摄影、Steam 和写点东西；有空打两把《三角洲行动》，耳机里常放薛之谦和李荣浩。</p>
+          <p>这里是我的日常番：没有剧本，偶尔卡关，但每一集都认真过。</p>
+
+          <ul class="tag-list" aria-label="兴趣标签">
+            <li class="tag">三角洲</li>
+            <li class="tag">番剧</li>
+            <li class="tag">Steam</li>
+            <li class="tag">薛之谦 / 李荣浩</li>
+            <li class="tag">轻小说</li>
+            <li class="tag">摄影</li>
+            <li class="tag">城市散步</li>
+            <li class="tag">手写笔记</li>
+          </ul>
+
+          <p class="about-note"><span>最近在看</span>《败北女主太多了》，也在读一本拖了很久的小说。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span class="footer-mark" aria-hidden="true">神</span>
+      <p class="footer-line">愿这个夏天的每一天，都像一集闪闪发光的番剧。</p>
+      <p class="footer-meta">
+        <span>© 2026 神の日常</span>
+        <span class="footer-separator" aria-hidden="true"></span>
+        <span>写于日常之间</span>
+        <span class="footer-separator" aria-hidden="true"></span>
+        <a class="footer-top" href="file:///C:/Users/ASUS/Documents/deepseek-harness/default-workspace/index.html#home">回到顶部 ↑</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      var filterButtons = Array.prototype.slice.call(document.querySelectorAll(".filter-button"));
+      var posts = Array.prototype.slice.call(document.querySelectorAll("[data-post]"));
+      var filterResult = document.getElementById("filter-result");
+      var filterNames = { all: "全部", life: "生活", study: "学习" };
+
+      /* 分类筛选 */
+      filterButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          var filter = button.getAttribute("data-filter");
+          var shown = 0;
+
+          filterButtons.forEach(function (item) {
+            item.setAttribute("aria-pressed", String(item === button));
+          });
+
+          posts.forEach(function (card) {
+            var matches = filter === "all" || card.getAttribute("data-category") === filter;
+            var wasHidden = card.hidden;
+
+            card.hidden = !matches;
+
+            if (matches) {
+              shown += 1;
+
+              if (wasHidden && !reduceMotion.matches && card.animate) {
+                card.animate(
+                  [
+                    { opacity: 0, transform: "translateY(8px)" },
+                    { opacity: 1, transform: "translateY(0)" }
+                  ],
+                  {
+                    duration: 320,
+                    easing: "cubic-bezier(0.22, 0.7, 0.2, 1)"
+                  }
+                );
+              }
+            }
+          });
+
+          if (filterResult) {
+            filterResult.textContent = filter === "all"
+              ? "共 " + shown + " 篇日常"
+              : filterNames[filter] + " · " + shown + " 篇日常";
+          }
+        });
+      });
+
+      /* 展开 / 收起正文 */
+      document.querySelectorAll(".read-more").forEach(function (button) {
+        var targetId = button.getAttribute("aria-controls");
+        var target = document.getElementById(targetId);
+        var label = button.querySelector(".read-more-text");
+        var card = button.closest(".post-card");
+
+        if (!target || !label) {
+          return;
+        }
+
+        button.addEventListener("click", function () {
+          var isExpanded = button.getAttribute("aria-expanded") === "true";
+
+          button.setAttribute("aria-expanded", String(!isExpanded));
+          label.textContent = isExpanded ? "阅读全文" : "收起正文";
+          target.hidden = isExpanded;
+
+          if (card) {
+            card.classList.toggle("is-open", !isExpanded);
+          }
+        });
+      });
+
+      /* 滚动时更新导航状态 */
+      var navLinks = Array.prototype.slice.call(document.querySelectorAll(".site-nav .nav-link"));
+      var sections = Array.prototype.slice.call(document.querySelectorAll("main section[id]"));
+      var ticking = false;
+
+      function updateCurrentSection() {
+        var marker = window.innerHeight * 0.3;
+        var currentId = sections.length ? sections[0].id : "home";
+
+        sections.forEach(function (section) {
+          if (section.getBoundingClientRect().top <= marker) {
+            currentId = section.id;
+          }
+        });
+
+        navLinks.forEach(function (link) {
+          if (link.getAttribute("href") === "#" + currentId) {
+            link.setAttribute("aria-current", "location");
+          } else {
+            link.removeAttribute("aria-current");
+          }
+        });
+      }
+
+      function requestNavUpdate() {
+        if (ticking) {
+          return;
+        }
+
+        ticking = true;
+        window.requestAnimationFrame(function () {
+          updateCurrentSection();
+          ticking = false;
+        });
+      }
+
+      window.addEventListener("scroll", requestNavUpdate, { passive: true });
+      window.addEventListener("resize", requestNavUpdate);
+      updateCurrentSection();
+    }());
+  </script>
+
+
+</body></html>
